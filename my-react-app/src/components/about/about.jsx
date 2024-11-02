@@ -1,5 +1,5 @@
 import React from "react"
-import "./about.css"
+import "./About.css"
 import Back from "../common/back/Back"
 import AboutCard from "./AboutCard"
 

@@ -15,3 +15,5 @@ npm install react-scripts --save
 npm install react-router-dom
 npm install react-router-dom --legacy-peer-deps
 npm install axios
+npm install react-i18next i18next
+npm install react-icons

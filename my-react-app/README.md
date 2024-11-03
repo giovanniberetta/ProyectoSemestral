@@ -72,3 +72,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 npm install react-scripts --save
 npm install react-router-dom
 npm install react-router-dom --legacy-peer-deps
+npm install react-i18next i18next
+npm install react-icons

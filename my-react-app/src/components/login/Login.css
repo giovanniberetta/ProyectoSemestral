@@ -1,9 +1,10 @@
+
 .login-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    
+    background-image: url("../../../public/images/bg.webp");
     background-size: cover;
     background-attachment: fixed;
     position: relative;

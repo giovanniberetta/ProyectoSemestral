@@ -50,6 +50,7 @@ function Register() {
   };
 
   return (
+    
     <div className="register-container">
       <div className="register-box">
         <h1>Registro de Usuario</h1>

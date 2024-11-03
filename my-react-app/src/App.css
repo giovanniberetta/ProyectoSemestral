@@ -86,7 +86,7 @@ p {
 }
 
 .back {
-  
+  background-image: url("../public/images/base.webp");
   background-size: cover;
   background-attachment: fixed;
   position: absolute;

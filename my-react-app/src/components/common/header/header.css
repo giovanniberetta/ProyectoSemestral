@@ -49,7 +49,7 @@
     }
     header {
       margin: 0;
-      background-color: #1eb2a6;
+      background-color: #0e26de;
       position: relative;
     }
     header ul.flexSB {
@@ -61,7 +61,7 @@
     .toggle {
       display: block;
       background: none;
-      color: #fff;
+      color: #ffffff;
       font-size: 30px;
       position: absolute;
       right: 0;
@@ -72,6 +72,6 @@
       top: 7vh;
       left: 0;
       width: 100%;
-      background-color: #1eb2a6;
+      background-color: #a13872;
     }
   }

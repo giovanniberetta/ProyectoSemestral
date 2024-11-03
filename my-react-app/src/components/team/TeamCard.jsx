@@ -1,22 +1,28 @@
 import React from "react"
-import Back from "../common/back/Back"
-import TeamCard from "./TeamCard"
-import "./team.css"
-import Awrapper from "../about/Awrapper"
-import "../about/About.css"
+import { team } from "../../dummydata"
 
-const Team = () => {
+const TeamCard = () => {
   return (
     <>
-      <Back title='Team' />
-      <section className='team padding'>
-        <div className='container grid'>
-          <TeamCard />
+      {team.map((val) => (
+        <div className='items shadow'>
+          <div className='img'>
+            <img src={val.cover} alt='' />
+            <div className='overlay'>
+              <i className='fab fa-facebook-f icon'></i>
+              <i className='fab fa-twitter icon'></i>
+              <i className='fab fa-instagram icon'></i>
+              <i className='fab fa-tiktok icon'></i>
+            </div>
+          </div>
+          <div className='details'>
+            <h2>{val.name}</h2>
+            <p>{val.work}</p>
+          </div>
         </div>
-      </section>
-      <Awrapper />
+      ))}
     </>
   )
 }
 
-export default Team
+export default TeamCard

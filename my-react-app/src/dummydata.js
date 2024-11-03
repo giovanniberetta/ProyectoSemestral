@@ -287,52 +287,45 @@ export const homeAbout = [
   ]
   export const price = [
     {
-      name: "BASIC PLAN",
-      price: "49K",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      name: "Intensive Study Plan",
+      price: "FREE",
+      desc: "This plan is designed for rapid and in-depth learning. Ideal for students who need to acquire knowledge or skills in a short period.",
     },
     {
-      name: "BEGINNER PLAN",
-      price: "79K",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      name: "Structured Study Plan",
+      price: "FREE x2",
+      desc: "This plan seeks a balance between theory and practice, promoting a solid understanding of concepts.",
     },
     {
-      name: "PREMIUM PLAN",
-      price: "109k",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      name: "Self-Directed Study Plan",
+      price: "FREE x3",
+      desc: "Encourages student autonomy, allowing each individual to adjust their pace and learning style according to their needs.",
     },
     {
-      name: "ULTIMATE PLAN",
-      price: "149K",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      name: "Project-Based Study Plan",
+      price: "FREE x4",
+      desc: "Centered on learning through practice, this plan uses real-world projects to apply learned concepts.",
     },
   ]
   export const faq = [
     {
-      title: "How to Enroll This Online Courses?",
-      desc: "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+        title: "How to Enroll in the Intensive Study Plan?",
+        desc: "To enroll in the Intensive Study Plan, visit our website and fill out the application form. Once submitted, you will receive a confirmation email with further instructions on payment and scheduling."
     },
     {
-      title: "Where It is hidden by default, until the collapse?",
-      desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+        title: "What is the Structure of the Structured Study Plan?",
+        desc: "The Structured Study Plan offers a balanced curriculum that includes theoretical lessons and practical applications. You can find the full schedule and syllabus on our website."
     },
     {
-      title: "How It is hidden by default, until the collapse?",
-      desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+        title: "How Does the Self-Directed Study Plan Work?",
+        desc: "In the Self-Directed Study Plan, students have the flexibility to choose their study materials and set their own pace. Resources and guidelines are available online to help you stay on track."
     },
     {
-      title: "How to Enroll This Online Courses?",
-      desc: "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
-    },
-    {
-      title: "Where It is hidden by default, until the collapse?",
-      desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
-    },
-    {
-      title: "How It is hidden by default, until the collapse?",
-      desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
-    },
-  ]
+        title: "How to Participate in the Project-Based Study Plan?",
+        desc: "To participate in the Project-Based Study Plan, you need to register on our platform. After registration, you will be assigned to projects based on your interests and skills, allowing you to collaborate with peers."
+    }
+];
+
   export const blog = [
     {
       id: 1,
@@ -391,24 +384,24 @@ export const homeAbout = [
   ]
   export const testimonal = [
     {
-      id: 1,
-      name: "ROGER SCOTT",
-      post: "MARKETING MANAGER",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-      cover: "./images/testo/t1.webp",
+        id: 1,
+        name: "JESSICA WILSON",
+        post: "GRAPHIC DESIGNER",
+        desc: "This course transformed my skills! The hands-on approach allowed me to apply what I learned immediately, and I feel more confident in my abilities.",
+        cover: "./images/testo/t1.webp",
     },
     {
-      id: 2,
-      name: "ROGER SCOTT",
-      post: "MARKETING MANAGER",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-      cover: "./images/testo/t2.webp",
+        id: 2,
+        name: "MICHAEL JOHNSON",
+        post: "SOFTWARE ENGINEER",
+        desc: "The structured study plan was incredibly helpful. I appreciated the balance between theory and practice, which made complex concepts easy to understand.",
+        cover: "./images/testo/t2.webp",
     },
     {
-      id: 3,
-      name: "ROGER SCOTT",
-      post: "MARKETING MANAGER",
-      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-      cover: "./images/testo/t3.webp",
+        id: 3,
+        name: "SARAH BROWN",
+        post: "PROJECT MANAGER",
+        desc: "The self-directed study plan gave me the flexibility I needed to learn at my own pace. I loved the resources provided, which made my learning experience enjoyable and effective.",
+        cover: "./images/testo/t3.webp",
     },
-  ]
+];

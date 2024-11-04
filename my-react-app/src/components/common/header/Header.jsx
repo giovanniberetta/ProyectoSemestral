@@ -1,21 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import Head from "./Head";
 import "./header.css";
+import { LanguageContext } from "../../../LanguageContext"; // Importa el contexto de idioma
 
 const Header = () => {
   const [click, setClick] = useState(false);
+  const { idioma } = useContext(LanguageContext); // Obtén el idioma desde el contexto
 
-  // Definimos un array de elementos de menú para evitar duplicación
+  // Definimos un array de elementos de menú en función del idioma
   const menuItems = [
-    { path: "/", label: "Home" },
-    { path: "/courses", label: "All Courses" },
-    { path: "/about", label: "About" },
-    { path: "/team", label: "Team" },
-    { path: "/pricing", label: "Pricing" },
-    { path: "/journal", label: "Journal" },
-    { path: "/contact", label: "Contact" },
-    { path: "/pruebas", label: "List" },
+    { path: "/", label: idioma === "español" ? "Inicio" : "Home" },
+    { path: "/courses", label: idioma === "español" ? "Todos los Cursos" : "All Courses" },
+    { path: "/about", label: idioma === "español" ? "Acerca de" : "About" },
+    { path: "/team", label: idioma === "español" ? "Equipo" : "Team" },
+    { path: "/pricing", label: idioma === "español" ? "Precios" : "Pricing" },
+    { path: "/journal", label: idioma === "español" ? "Diario" : "Journal" },
+    { path: "/contact", label: idioma === "español" ? "Contacto" : "Contact" },
+    { path: "/pruebas", label: idioma === "español" ? "Lista" : "List" },
   ];
 
   return (
@@ -35,7 +37,7 @@ const Header = () => {
           </ul>
           <div className="start">
             <Link to="/login">
-              <div className="button">Login</div>
+              <div className="button">{idioma === "español" ? "Iniciar Sesión" : "Login"}</div>
             </Link>
           </div>
           <button className="toggle" onClick={() => setClick(!click)}>

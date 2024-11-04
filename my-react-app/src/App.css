@@ -16,7 +16,9 @@ body {
 .flexSB {
   display: flex;
   justify-content: space-between;
+  background-color: rgba(87, 85, 85, 0.05); /* Gris opaco al 5% */
 }
+
 .icon {
   width: 40px;
   height: 40px;

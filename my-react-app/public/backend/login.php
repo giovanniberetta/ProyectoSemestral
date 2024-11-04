@@ -25,7 +25,7 @@ $email = $data['email'];
 $password = $data['password'];
 
 // Preparar la consulta para buscar al usuario por email
-$sql = "SELECT * FROM usuarios WHERE email = ?";
+$sql = "SELECT nombre, password, rol, idioma FROM usuarios WHERE email = ?";
 $stmt = $conn->prepare($sql);
 
 if (!$stmt) {
@@ -42,7 +42,12 @@ if ($result->num_rows > 0) {
 
     // Verificar la contraseña (usando password_verify si la contraseña está cifrada)
     if (password_verify($password, $user['password'])) {
-        echo json_encode(["success" => true]);
+        echo json_encode([
+            "success" => true,
+            "nombre" => $user['nombre'],
+            "rol" => $user['rol'],
+            "idioma" => $user['idioma']
+        ]);
     } else {
         echo json_encode(["success" => false, "message" => "Contraseña incorrecta"]);
     }

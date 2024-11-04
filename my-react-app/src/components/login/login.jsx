@@ -29,8 +29,10 @@ function Login() {
         // Redirige a la página de inicio con un mensaje de bienvenida
         history.push({
           pathname: '/',
+          
          
         });
+        window.location.reload();
       } else {
         setError(response.data.message || 'Credenciales incorrectas');
       }

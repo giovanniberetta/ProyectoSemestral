@@ -2,9 +2,8 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-function ProtectedRoute({ component: Component, ...rest }) {
-  // Verificar si el usuario está autenticado
-  const isAuthenticated = JSON.parse(localStorage.getItem('loggedInUser'))?.isAuthenticated;
+const ProtectedRoute = ({ component: Component, ...rest }) => {
+  const isAuthenticated = localStorage.getItem('loggedInUser'); // Verifica si hay un usuario autenticado en localStorage
 
   return (
     <Route
@@ -13,11 +12,12 @@ function ProtectedRoute({ component: Component, ...rest }) {
         isAuthenticated ? (
           <Component {...props} />
         ) : (
-          <Redirect to="/login" />
+          // Si no está autenticado, redirige a "/" con un mensaje
+          <Redirect to={{ pathname: '/', state: { message: 'Debes iniciar sesión para acceder a esta sección.' } }} />
         )
       }
     />
   );
-}
+};
 
 export default ProtectedRoute;

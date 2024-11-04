@@ -32,7 +32,19 @@ function MainRoutes() {
 
   return (
     <div>
-      {message && <p style={{ color: 'green' }}>{message}</p>}
+      {/* Muestra el mensaje solo si existe */}
+      {message && (
+        <div style={{
+          backgroundColor: '#f8d7da',
+          color: '#721c24',
+          padding: '10px',
+          borderRadius: '5px',
+          textAlign: 'center',
+          marginBottom: '15px',
+        }}>
+          {message}
+        </div>
+      )}
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />

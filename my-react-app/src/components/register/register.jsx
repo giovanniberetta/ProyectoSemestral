@@ -29,7 +29,7 @@ function Register() {
 
       if (response.data.success) {
         setSuccess("Registro exitoso. Redirigiendo a la página de inicio de sesión...");
-        setTimeout(() => history.push('/login'), 2000); // Redirige después de 2 segundos
+        setTimeout(() => history.push('/login'), 3000); // Redirige después de 2 segundos
       } else {
         setError(response.data.message || "Error al registrar el usuario");
       }
@@ -50,7 +50,6 @@ function Register() {
   };
 
   return (
-    
     <div className="register-container">
       <div className="register-box">
         <h1>Registro de Usuario</h1>

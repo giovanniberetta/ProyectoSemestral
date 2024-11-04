@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import "./Login.css";
-import Heading from "../common/heading/Heading"
+import { LanguageContext } from "../../LanguageContext"; // Importa el contexto de idioma
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -10,6 +10,7 @@ function Login() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const history = useHistory();
+  const { setIdioma } = useContext(LanguageContext); // Obtén la función para establecer el idioma
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,16 +25,15 @@ function Login() {
       );
 
       if (response.data.success) {
-        // Almacena el nombre del usuario en localStorage
-        localStorage.setItem('loggedInUser', JSON.stringify({ nombre: response.data.nombre }));
+        // Almacena el nombre y el idioma del usuario en localStorage
+        localStorage.setItem('loggedInUser', JSON.stringify({ nombre: response.data.nombre, idioma: response.data.idioma }));
 
-        // Redirige a la página de inicio con un mensaje de bienvenida
-        history.push({
-          pathname: '/',
-          
-         
-        });
-        window.location.reload();
+        // Actualiza el idioma en el contexto global
+        setIdioma(response.data.idioma || 'inglés'); // Usa inglés por defecto si no hay idioma
+
+        // Redirige a la página de inicio
+        history.push('/');
+        window.location.reload(); // Recarga la página para aplicar el cambio de idioma
       } else {
         setError(response.data.message || 'Credenciales incorrectas');
       }

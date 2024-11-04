@@ -7,7 +7,7 @@ para poder usarla hay que meter en la carpeta xampp/htdocs los archivos que se e
 los cuales son:
 -db.php
 -getUsuarios.php
--
+-etccc....
 
 
 ----comandos en caso de fallos / dependencias

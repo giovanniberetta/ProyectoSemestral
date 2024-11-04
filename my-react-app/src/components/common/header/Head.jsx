@@ -37,13 +37,15 @@ const Head = () => {
 
         {/* Muestra el nombre del usuario y el botón de cierre de sesión si está logeado */}
         {loggedInUser && (
+        <div className="user-info-container">
           <div className="user-info">
             <span>Bienvenido, {loggedInUser}</span>
             <button onClick={handleLogout} className="logout-button">
               Cerrar sesión
             </button>
           </div>
-        )}
+        </div>
+       )}
       </div>
     </section>
   );

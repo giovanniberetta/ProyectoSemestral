@@ -89,5 +89,19 @@
       border-radius: 5px;
       z-index: 1000; /* Asegura que esté encima de otros elementos */
     }
+    .user-info-container {
+      display: flex;
+      justify-content: flex-end; /* Alinea a la derecha */
+    }
+    
+    .user-info {
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-left: auto; /* Centra horizontalmente a la derecha */
+    }
     
   }

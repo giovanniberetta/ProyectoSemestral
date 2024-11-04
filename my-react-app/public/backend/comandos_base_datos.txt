@@ -35,3 +35,4 @@ CREATE TABLE lecciones (
 );
 
 ALTER TABLE usuarios ADD idioma VARCHAR(50) DEFAULT 'español';
+ALTER TABLE usuarios MODIFY COLUMN idioma ENUM('español', 'inglés') NOT NULL;

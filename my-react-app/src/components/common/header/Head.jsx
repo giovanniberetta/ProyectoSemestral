@@ -39,7 +39,7 @@ const Head = () => {
         {loggedInUser && (
         <div className="user-info-container">
           <div className="user-info">
-            <span>Bienvenido, {loggedInUser}</span>
+            <span>Bienvenido, {loggedInUser} </span>
             <button onClick={handleLogout} className="logout-button">
               Cerrar sesión
             </button>

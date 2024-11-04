@@ -114,6 +114,7 @@ p {
   padding-right: 50px;
   color: #fff;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .back h1 {
   font-size: 100px;

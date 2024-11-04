@@ -10,7 +10,7 @@ const Footer = () => {
           <div className='box logo'>
             <h1>Academia Inteligentes Asintomaticos</h1>
             <span>ONLINE EDUCATION & SELF IMPROVEMENT</span>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <p>Disce sine limitibus, crescunt sine limitibus.</p>
 
             <i className='fab fa-facebook-f icon'></i>
             <i className='fab fa-twitter icon'></i>

@@ -12,7 +12,7 @@ function App() {
       .catch(error => {
         console.error("Error al obtener los datos:", error);
       });
-  }, []);
+  }, []); 
 
   return (
     <div>

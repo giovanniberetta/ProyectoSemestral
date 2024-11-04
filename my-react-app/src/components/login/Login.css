@@ -1,3 +1,10 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  color: #fff; /* Color del texto */
+  padding: 10px; /* Espaciado */
+  text-align: center; /* Centrar texto */
+  position: relative; /* Asegúrate de que esté en su lugar */
+}
 
 .login-container {
     display: flex;
@@ -9,8 +16,8 @@
     background-attachment: fixed;
     position: relative;
     color: #fff;
-    
-  }
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
+}
   
   .login-box {
     background: rgba(0, 0, 0, 0.7);

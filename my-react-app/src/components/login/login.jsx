@@ -23,9 +23,13 @@ function Login() {
       );
 
       if (response.data.success) {
+        // Almacena el nombre del usuario en localStorage
+        localStorage.setItem('loggedInUser', JSON.stringify({ nombre: response.data.nombre }));
+
+        // Redirige a la página de inicio con un mensaje de bienvenida
         history.push({
           pathname: '/',
-          state: { message: 'Inicio de sesión exitoso' },
+         
         });
       } else {
         setError(response.data.message || 'Credenciales incorrectas');

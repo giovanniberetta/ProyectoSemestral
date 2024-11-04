@@ -10,8 +10,9 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/common/footer/Footer";
 import Home from "./components/home/Home";
 import Pruebas from "./components/pruebas/pruebas"; 
-import Login from "./components/login/login"; // Importa el componente de Login
-import Register from "./components/register/register"; // Importa el componente de registro
+import Login from "./components/login/login";
+import Register from "./components/register/register";
+import ProtectedRoute from "./components/ProtectedRoute"; // Importa el componente de ruta protegida
 
 function App() {
   return (
@@ -25,7 +26,6 @@ function App() {
   );
 }
 
-// Componente para manejar las rutas principales y mostrar mensajes de éxito
 function MainRoutes() {
   const location = useLocation();
   const message = location.state?.message || '';
@@ -41,9 +41,9 @@ function MainRoutes() {
         <Route exact path="/pricing" component={Pricing} />
         <Route exact path="/journal" component={Blog} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/pruebas" component={Pruebas} />
-        <Route exact path="/login" component={Login} /> {/* Ruta para Login */}
-        <Route exact path="/register" component={Register} /> {/* Nueva ruta para Register */}
+        <ProtectedRoute exact path="/pruebas" component={Pruebas} /> {/* Ruta protegida */}
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
       </Switch>
     </div>
   );

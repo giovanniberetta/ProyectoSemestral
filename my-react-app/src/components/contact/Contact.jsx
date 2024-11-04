@@ -10,7 +10,6 @@ const Contact = () => {
       <section className='contacts padding'>
         <div className='container shadow flexSB'>
           <div className='left row'>
-             <img src="../../../../public/images/contact.jpg" alt="Descripción de la imagen" />
           </div>
           <div className='right row'>
             <h1>Contact us</h1>

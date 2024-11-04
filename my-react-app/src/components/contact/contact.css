@@ -19,6 +19,11 @@
   color: #ddd; /* Color más claro para mayor contraste */
   line-height: 1.6; /* Mejora la legibilidad */
 }
+.contacts .left img {
+  width: 100%; /* O ajusta el tamaño según sea necesario */
+  height: auto;
+  border-radius: 8px; /* Si deseas esquinas redondeadas */
+}
 
 .contacts .right {
   padding: 50px;

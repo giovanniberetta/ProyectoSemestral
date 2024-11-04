@@ -18,6 +18,8 @@
   }
   header .nav {
     display: flex !important;
+    color: rgba(255, 255, 255, 1);
+
   }
   header li {
     margin-right: 40px;
@@ -53,8 +55,9 @@
       position: relative;
     }
     header ul.flexSB {
-      display: none;
-    }
+      color: rgba(255, 255, 255, 0.7);
+  }
+  
     header ul li {
       margin-bottom: 20px;
     }

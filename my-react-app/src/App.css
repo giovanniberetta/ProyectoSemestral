@@ -33,8 +33,23 @@ body {
   color: #fff;
 }
 a {
-  text-decoration: none;
+  text-decoration: none; /* Sin subrayado */
+  color: #ffffff; /* Blanco para buen contraste */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
+  padding: 5px 10px; /* Espaciado interno para un mejor toque */
+  border-radius: 4px; /* Bordes redondeados */
 }
+
+a:hover {
+  color: #0c838e; /* Cambia el color del texto al pasar el mouse */
+  background-color: #ffffff; /* Fondo blanco al pasar el mouse */
+}
+
+a:active {
+  color: #f0a500; /* Color para cuando se hace clic */
+  background-color: #e0e0e0; /* Fondo gris claro al hacer clic */
+}
+
 li {
   list-style-type: none;
 }

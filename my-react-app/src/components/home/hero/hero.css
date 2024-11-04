@@ -34,3 +34,23 @@
       width: 100%;
     }
   }
+  .button-container {
+    display: flex;
+    justify-content: flex-start; /* Alinea a la izquierda */
+    margin-top: 20px; /* Espacio superior opcional */
+  }
+  
+  button {
+    padding: 12px 20px; /* Espaciado del botón */
+    background-color: #28a745; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar el mouse */
+    transition: background 0.3s ease; /* Efecto de transición */
+  }
+  
+  button:hover {
+    background-color: #218838; /* Color al pasar el mouse */
+  }
+  

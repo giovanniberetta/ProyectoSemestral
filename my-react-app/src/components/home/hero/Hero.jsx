@@ -25,9 +25,12 @@ const Hero = () => {
               <button className="primary-btn">
                 {idioma === "español" ? "COMIENZA AHORA" : "GET STARTED NOW"} <i className="fa fa-long-arrow-alt-right"></i>
               </button>
+              <div className="button-container">
               <button>
                 {idioma === "español" ? "VER CURSOS" : "VIEW COURSE"} <i className="fa fa-long-arrow-alt-right"></i>
               </button>
+              </div>
+
             </div>
           </div>
         </div>

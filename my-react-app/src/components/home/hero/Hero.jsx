@@ -12,9 +12,23 @@ const Hero = () => {
         <div className="container">
           <div className="row">
             {idioma === "español" ? (
-              <Heading subtitle="BIENVENIDO A ACADEMIA" title="La mejor experiencia en educación en línea" />
+              <Heading
+                subtitle="BIENVENIDO A ACADEMIA"
+                title={
+                  <span className="circle-highlight">
+                    La mejor experiencia en educación en línea
+                  </span>
+                }
+              />
             ) : (
-              <Heading subtitle="WELCOME TO ACADEMIA" title="Best Online Education Expertise" />
+              <Heading
+                subtitle="WELCOME TO ACADEMIA"
+                title={
+                  <span className="circle-highlight">
+                    Best Online Education Expertise
+                  </span>
+                }
+              />
             )}
             <p>
               {idioma === "español"
@@ -23,14 +37,15 @@ const Hero = () => {
             </p>
             <div className="button">
               <button className="primary-btn">
-                {idioma === "español" ? "COMIENZA AHORA" : "GET STARTED NOW"} <i className="fa fa-long-arrow-alt-right"></i>
+                {idioma === "español" ? "COMIENZA AHORA" : "GET STARTED NOW"}{" "}
+                <i className="fa fa-long-arrow-alt-right"></i>
               </button>
               <div className="button-container">
-              <button>
-                {idioma === "español" ? "VER CURSOS" : "VIEW COURSE"} <i className="fa fa-long-arrow-alt-right"></i>
-              </button>
+                <button>
+                  {idioma === "español" ? "VER CURSOS" : "VIEW COURSE"}{" "}
+                  <i className="fa fa-long-arrow-alt-right"></i>
+                </button>
               </div>
-
             </div>
           </div>
         </div>

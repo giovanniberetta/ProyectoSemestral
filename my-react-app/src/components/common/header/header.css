@@ -51,11 +51,12 @@
     }
     header {
       margin: 0;
-      background-color: #0e26de;
+      background-color: #218838;
       position: relative;
     }
     header ul.flexSB {
       color: rgba(255, 255, 255, 0.7);
+      display: none;
   }
   
     header ul li {
@@ -75,7 +76,9 @@
       top: 7vh;
       left: 0;
       width: 100%;
-      background-color: #a13872;
+      background-color: #1EB2A6;
+      color: #ffffff;
+
     }
     .user-info {
       position: fixed;

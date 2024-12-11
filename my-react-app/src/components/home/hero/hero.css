@@ -20,6 +20,7 @@
     text-align: left;
     margin: 0;
     padding: 0;
+    
   }
   @media screen and (max-width: 768px) {
     .margin {
@@ -52,5 +53,15 @@
   
   button:hover {
     background-color: #218838; /* Color al pasar el mouse */
+  }
+  .hero .circle-highlight {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 50%; /* Hace el fondo circular */
+    padding: 20px; /* Ajusta el espacio interno */
+    display: inline-block; /* Muestra el contenido en línea */
+    color: #333; /* Color del texto para contraste */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centra el texto dentro del círculo */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para efecto */
   }
   
